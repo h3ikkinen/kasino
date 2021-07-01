@@ -1,0 +1,41 @@
+input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.input {
+    width: 100%;
+    label {
+        font-size: 18px;
+        color: $mainWhite;
+        font-weight: 500;
+    }
+    input {
+        margin-top: 8px;
+        border: solid 1px $mainWhite;
+        background-color: $bgBlue;
+        color: $mainWhite;
+        height: 48px;
+        width: 100%;
+        padding: 8px 15px;
+        border-radius: 5px;
+        width: 100%;
+    }
+    input::-webkit-input-placeholder {
+        color:$mainWhite;
+        opacity: .7;
+    }
+    input:-moz-placeholder {
+        color:$mainWhite;
+        opacity: .7;
+    }
+    input:-ms-input-placeholder {
+        color:$mainWhite;
+        opacity: .7;
+    }
+    input::-moz-placeholder {
+        color:$mainWhite;
+        opacity: .7;
+    }
+
+}

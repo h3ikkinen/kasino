@@ -1,0 +1,250 @@
+<div class="modal js-modal-login">
+    <div class="modal__overlay js-modal-login-trigger">
+    </div>
+    <div class="modal__body">
+        <div class="closeIcon js-modal-login-trigger">
+            <svg height="329pt" viewBox="0 0 329.26933 329" width="329pt" xmlns="http://www.w3.org/2000/svg"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/></svg>
+        </div>
+        <div class="loginBody">
+            <h2 class="modal__body-title">Войти</h2>
+            <div class="input">
+                <label for="loginEmail">Введите свой email</label>
+                <input id="loginEmail" type="email" placeholder="Email">
+            </div>
+            <div class="input">
+                <label for="loginPass">Введите свой пароль</label>
+                <input id="loginPass" type="password" placeholder="Пароль">
+            </div>
+            <div class="btn main">
+                <span>
+                    Войти
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal js-modal-reg">
+    <div class="modal__overlay js-modal-reg-trigger">
+    </div>
+    <div class="modal__body reg">
+        <div class="closeIcon js-modal-reg-trigger">
+            <svg height="329pt" viewBox="0 0 329.26933 329" width="329pt" xmlns="http://www.w3.org/2000/svg"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/></svg>
+        </div>
+        <div class="regBody">
+            <h2 class="modal__body-title">Регистрация</h2>
+            <div class="reg_selects">
+                <div class="typeRegContainer">
+                    <h3>
+                        Выберите тип регистрации
+                    </h3>
+                    <div class="selectTypeReg">
+                        <select class="js-example-basic-single" name="state">
+                            <option value="tel">Телефон</option>
+                            <option value="email">Электронная почта</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="typeRegContainer valute">
+                    <h3>
+                        Выберите валюту
+                    </h3>
+                    <div class="selectTypeReg">
+                        <select class="js-example-basic-valute" name="valute">
+                            <option value="RUB">RUB</option>
+                            <option value="USD">USD</option>
+                            <option value="KZT">KZT</option>
+                            <option value="BDT">BDT</option>
+                            <option value="KHR">KHR</option>
+                            <option value="SGD">SGD</option>
+                            <option value="RUB">RUB</option>
+                            <option value="USD">USD</option>
+                            <option value="KZT">KZT</option>
+                            <option value="BDT">BDT</option>
+                            <option value="KHR">KHR</option>
+                            <option value="SGD">SGD</option>
+                            <option value="RUB">RUB</option>
+                            <option value="USD">USD</option>
+                            <option value="KZT">KZT</option>
+                            <option value="BDT">BDT</option>
+                            <option value="KHR">KHR</option>
+                            <option value="SGD">SGD</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="inputsReg">
+                <div class="input telNumber js-tel">
+                    <label for="">Номер телефона</label>
+                    <div class="telContainer">
+                        <div class="selectCont">
+                            <select class="js-example-basic-num" name="state">
+                                <option value="+7">+7</option>
+                                <option value="+9">+9</option>
+                                <option value="+329">+329</option>
+                                <option value="+626">+626</option>
+                                <option value="+999">+999</option>
+                                <option value="+492">+492</option>
+                                <option value="+578">+578</option>
+                            </select>
+                        </div>
+                        <input type="text" id="regTel" placeholder="999-999-99-99">
+                    </div>
+                </div>
+                <div class="input telNumber js-email" style="display: none;">
+                    <div class="input">
+                        <label for="emailReg">Введите почту</label>
+                        <input type="email" id="emailReg">
+                    </div>
+                </div>
+                <div class="passwordInputs">
+                    <div class="input">
+                        <label for="passwordMain">Введите пароль</label>
+                        <input type="password" id="passwordMain">
+                    </div>
+                    <div class="input">
+                        <label for="passwordCheck">Подтвердите пароль</label>
+                        <input type="password" id="passwordCheck">
+                    </div>
+                </div>
+            </div>
+            <div class="conf">
+                <input type="checkbox" id="confCheckbox">
+                <label for="confCheckbox">
+                    Подтверждаю, что мне больше 21 года и я прочитал <a class="link" href="#">правила политики конфиденциальности</a> и <a class="link" href="#">правила использования ресурсов</a>
+                </label>
+            </div>
+            <div class="btn main disabled js-reg-btn">
+                <span>
+                    Регистрация
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal js-mobile-modal mobile">
+    
+    <div class="modal__body mobile">
+        <div class="closeIcon js-mobile-modal-trigger">
+            <svg height="329pt" viewBox="0 0 329.26933 329" width="329pt" xmlns="http://www.w3.org/2000/svg"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/></svg>
+        </div>
+        <div class="btn main js-modal-reg-trigger">
+            <span>
+                РЕГИСТРАЦИЯ
+            </span>
+        </div>
+        <div class="btn secondary js-modal-login-trigger">
+            <span>
+                ВХОД
+            </span>
+        </div>
+    </div>
+</div>
+<header class="header desktopHeader">
+    <div class="logo">
+        <img src="img/logo.png" alt="logo">
+    </div>
+    <div class="right">
+        <div class="btns desktop">
+            <div class="btn main js-modal-reg-trigger">
+                <span>
+                    РЕГИСТРАЦИЯ
+                </span>
+            </div>
+            <div class="btn secondary js-modal-login-trigger">
+                <span>
+                    ВХОД
+                </span>
+            </div>
+        </div>
+        <div class="btns mobile js-mobile-modal-trigger">
+            <div class="btn iconLogin js-mobileLoginModal-trigger">
+                <svg height="512pt" viewBox="0 -32 512.016 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m192 213.339844c-58.816406 0-106.667969-47.847656-106.667969-106.664063 0-58.816406 47.851563-106.6679685 106.667969-106.6679685s106.667969 47.8515625 106.667969 106.6679685c0 58.816407-47.851563 106.664063-106.667969 106.664063zm0-181.332032c-41.171875 0-74.667969 33.492188-74.667969 74.667969 0 41.171875 33.496094 74.664063 74.667969 74.664063s74.667969-33.492188 74.667969-74.664063c0-41.175781-33.496094-74.667969-74.667969-74.667969zm0 0"/><path d="m368 448.007812h-352c-8.832031 0-16-7.167968-16-16v-74.667968c0-55.871094 45.460938-101.332032 101.332031-101.332032h181.335938c55.871093 0 101.332031 45.460938 101.332031 101.332032v74.667968c0 8.832032-7.167969 16-16 16zm-336-32h320v-58.667968c0-38.226563-31.105469-69.332032-69.332031-69.332032h-181.335938c-38.226562 0-69.332031 31.105469-69.332031 69.332032zm0 0"/><path d="m496 218.675781h-181.332031c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h181.332031c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m410.667969 304.007812c-4.097657 0-8.191407-1.558593-11.308594-4.691406-6.25-6.253906-6.25-16.386718 0-22.636718l74.027344-74.027344-74.027344-74.027344c-6.25-6.25-6.25-16.382812 0-22.632812s16.382813-6.25 22.636719 0l85.332031 85.332031c6.25 6.25 6.25 16.386719 0 22.636719l-85.332031 85.332031c-3.136719 3.15625-7.234375 4.714843-11.328125 4.714843zm0 0"/></svg>
+            </div>
+        </div>
+        <div class="changeLanguage">
+            <div class="changeLanguage_item">
+                <span class="icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                            <path
+                                d="M7.56094 12.1383L0.180933 4.73787C-0.0607219 4.4954 -0.0603156 4.10284 0.182183 3.86078C0.424651 3.6189 0.817431 3.61953 1.05927 3.86203L8.00003 10.822L14.9408 3.86178C15.1826 3.61931 15.5752 3.61868 15.8177 3.86053C15.9392 3.98187 16 4.14084 16 4.29981C16 4.45837 15.9396 4.61671 15.8189 4.73784L8.43909 12.1383C8.3229 12.2551 8.16478 12.3207 8.00003 12.3207C7.83528 12.3207 7.67734 12.2549 7.56094 12.1383Z"
+                                fill="#F2F2F2" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0">
+                                <rect width="16" height="16" fill="white" transform="matrix(0 1 1 0 0 6.10352e-05)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </span>
+                <span class="changeLanguage_item-text">
+                    RU
+                </span>
+                <span class="flag">
+                    <img src="img/flag.png" alt="logo">
+                </span>
+            </div>
+            <div class="languages__dropdown">
+                <div class="languages__title">Сменить язык</div>
+                <div class="languages__items">
+                    <div class="languages__item ng-star-inserted">
+                        <span class="cursor-pointer"><img alt="language to select" src="img/flag.png">da - Dansk</span>
+                    </div>
+                    <div class="languages__item ng-star-inserted">
+                        <span class="cursor-pointer">
+                            <img alt="language to select" src="img/flag.png">de - Deutsche
+                        </span>
+                    </div>
+                    <div class="languages__item ng-star-inserted">
+                        <span class="cursor-pointer">
+                            <img alt="language to select" src="img/flag.png">en - English
+                        </span>
+                        </div>
+                    <div class="languages__item ng-star-inserted">
+                        <span class="cursor-pointer">
+                            <img alt="language to select" src="img/flag.png">es - Español
+                        </span>
+                    </div>
+                    <div class="languages__item ng-star-inserted">
+                        <span class="cursor-pointer"><img alt="language to select" src="img/flag.png">da - Dansk</span>
+                    </div>
+                    <div class="languages__item ng-star-inserted">
+                        <span class="cursor-pointer">
+                            <img alt="language to select" src="img/flag.png">de - Deutsche
+                        </span>
+                    </div>
+                    <div class="languages__item ng-star-inserted">
+                        <span class="cursor-pointer">
+                            <img alt="language to select" src="img/flag.png">en - English
+                        </span>
+                        </div>
+                    <div class="languages__item ng-star-inserted">
+                        <span class="cursor-pointer">
+                            <img alt="language to select" src="img/flag.png">es - Español
+                        </span>
+                    </div>
+                    <div class="languages__item ng-star-inserted">
+                        <span class="cursor-pointer"><img alt="language to select" src="img/flag.png">da - Dansk</span>
+                    </div>
+                    <div class="languages__item ng-star-inserted">
+                        <span class="cursor-pointer">
+                            <img alt="language to select" src="img/flag.png">de - Deutsche
+                        </span>
+                    </div>
+                    <div class="languages__item ng-star-inserted">
+                        <span class="cursor-pointer">
+                            <img alt="language to select" src="img/flag.png">en - English
+                        </span>
+                        </div>
+                    <div class="languages__item ng-star-inserted">
+                        <span class="cursor-pointer">
+                            <img alt="language to select" src="img/flag.png">es - Español
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+

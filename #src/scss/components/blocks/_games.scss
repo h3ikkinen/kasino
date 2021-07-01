@@ -1,0 +1,481 @@
+.games {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2em;
+    .gameItem {
+        position: relative;
+        overflow:hidden;
+        margin-bottom: 1em;
+        width: 15.5%;
+        margin-right: 1.4%;
+        // &:nth-child(7n + 7) {
+        //     margin-right: 0;
+        // }
+        &:nth-child(6n + 6) {
+            margin-right: 0;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            transition: .2s ease-in-out;
+        }
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+            .popularGamesItem_content {
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(0%);
+                z-index: 3;
+            }
+        }
+        .popularGamesItem_content {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(50%);
+            transition: .2s ease-in-out;
+            .content {
+                width: 80%;
+                top: 10%;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                .btn {
+                    max-width: 100%;
+                    margin-top: 10px;
+                    height: 40px;
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .like {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                background-color: $lightBlue;
+                height: 30px;
+                width: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+                cursor: pointer;
+                &:hover {
+                    background-color: $darkBlue;
+                }
+            }
+            .star {
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                background-color: $lightBlue;
+                height: 30px;
+                padding-right: 5px;
+                padding-left: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 32px;
+                cursor: pointer;
+                color: $mainWhite;
+                svg {
+                    margin-right: 2px;
+                }
+                &:hover {
+                    background-color: $darkBlue;
+                }
+            }
+            .main {
+                background-color: $bgBlue;
+                &:hover {
+                    background-color: $mainWhite;
+                    span {
+                        color: $bgBlue;
+                    }
+                }
+            }
+        }
+    }
+}
+.btn_wrapper {
+    width: 60%;
+    max-width: 360px;
+    min-width: 240px;
+}
+@media (max-width: 1600px) {
+    .games {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 2em;
+        .gameItem {
+            margin-bottom: 1em;
+            width: 19%;
+            margin-right: 1.25%;
+            &:nth-child(6n + 6) {
+                margin-right: 1.25%;
+            }
+            &:nth-child(5n + 5) {
+                margin-right: 0;
+            }
+            .popularGamesItem_content {
+                transform: translateY(50%);
+                transition: .2s ease-in-out;
+                .content {
+                    width: 70%;
+                    top: 10%;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    .btn {
+                        max-width: 100%;
+                        margin-top: 10px;
+                        height: 40px;
+                        span {
+                            font-size: 12px;
+                        }   
+                    }
+                }
+                .like {
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+                    background-color: $lightBlue;
+                    height: 30px;
+                    width: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 100%;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $darkBlue;
+                    }
+                }
+                .star {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 10px;
+                    background-color: $lightBlue;
+                    height: 30px;
+                    padding-right: 5px;
+                    padding-left: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 32px;
+                    cursor: pointer;
+                    color: $mainWhite;
+                    svg {
+                        margin-right: 2px;
+                    }
+                    &:hover {
+                        background-color: $darkBlue;
+                    }
+                }
+                .main {
+                    background-color: $bgBlue;
+                    &:hover {
+                        background-color: $mainWhite;
+                        span {
+                            color: $bgBlue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1280px) {
+    .games {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 2em;
+        .gameItem {
+            margin-bottom: 1em;
+            width: 24%;
+            margin-right: 1.33333%;
+            &:nth-child(6n + 6) {
+                margin-right: 1.33333%;
+            }
+            &:nth-child(5n + 5) {
+                margin-right: 1.33333%;
+            }
+            &:nth-child(4n + 4) {
+                margin-right: 0 !important;
+            }
+            .popularGamesItem_content {
+                .content {
+                    width: 70%;
+                    .btn {
+                        height: 40px;
+                        span {
+                            font-size: 12px;
+                        }   
+                    }
+                }
+                .like {
+                    &:hover {
+                        background-color: $darkBlue;
+                    }
+                }
+                .star {
+                    svg {
+                        margin-right: 2px;
+                    }
+                }
+                .main {
+                    &:hover {
+                        span {
+                            color: $bgBlue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1100px) {
+    .games {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 2em;
+        .gameItem {
+            margin-bottom: 1em;
+            width: 24%;
+            margin-right: 1.33333%;
+            &:nth-child(6n + 6) {
+                margin-right: 1.33333%;
+            }
+            &:nth-child(5n + 5) {
+                margin-right: 1.33333%;
+            }
+            &:nth-child(4n + 4) {
+                margin-right: 0 !important;
+            }
+            .popularGamesItem_content {
+                .content {
+                    width: 70%;
+                    .btn {
+                        height: 40px;
+                        span {
+                            font-size: 10px;
+                        }   
+                    }
+                }
+                .like {
+                    &:hover {
+                        background-color: $darkBlue;
+                    }
+                }
+                .star {
+                    svg {
+                        margin-right: 2px;
+                    }
+                }
+                .main {
+                    &:hover {
+                        span {
+                            color: $bgBlue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 900px) {
+    .btn_wrapper {
+        .btn {
+            height: 40px;
+        }
+    }
+    .games {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 2em;
+        .gameItem {
+            margin-bottom: 1em;
+            width: 32%;
+            margin-right: 2%;
+            &:nth-child(6n + 6) {
+                margin-right: 2%;
+            }
+            &:nth-child(5n + 5) {
+                margin-right: 2%;
+            }
+            &:nth-child(4n + 4) {
+                margin-right: 2% !important;
+            }
+            &:nth-child(3n + 3) {
+                margin-right: 0 !important;
+            }
+            .popularGamesItem_content {
+                .content {
+                    width: 80%;
+                    .btn {
+                        height: 40px;
+                        span {
+                            font-size: 12px;
+                        }   
+                    }
+                }
+                .like {
+                    &:hover {
+                        background-color: $darkBlue;
+                    }
+                }
+                .star {
+                    svg {
+                        margin-right: 2px;
+                    }
+                }
+                .main {
+                    &:hover {
+                        span {
+                            color: $bgBlue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .btn_wrapper {
+        margin: 0 auto;
+    }
+    .games {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 2em;
+        .gameItem {
+            margin-bottom: .5em;
+            width: 49%;
+            margin-right: 2%;
+            &:nth-child(6n + 6) {
+                margin-right: 2%;
+            }
+            &:nth-child(5n + 5) {
+                margin-right: 2%;
+            }
+            &:nth-child(4n + 4) {
+                margin-right: 2% !important;
+            }
+            &:nth-child(3n + 3) {
+                margin-right: 2% !important;
+            }
+            &:nth-child(2n) {
+                margin-right: 0% !important;
+            }
+            .popularGamesItem_content {
+                .content {
+                    width: 95%;
+                    .btn {
+                        margin-top: 5px;
+                        height: 30px;
+                        span {
+                            font-size: 10px;
+                        }   
+                    }
+                }
+                .like {
+                    height: 20px;
+                    width: 20px;
+                    &:hover {
+                        background-color: $darkBlue;
+                    }
+
+                    svg {
+                        height: 15px;
+                    }
+                }
+                .star {
+                    height: 20px;
+                    svg {
+                        margin-right: 2px;
+                        height: 15px;
+                    }
+                }
+                .main {
+                    
+                    &:hover {
+                        span {
+                            color: $bgBlue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 360px) {
+    .games {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 2em;
+        .gameItem {
+            width: 100%;
+            margin-right: 0% !important;
+            &:nth-child(6n + 6) {
+                margin-right: 0%;
+            }
+            &:nth-child(5n + 5) {
+                margin-right: 0%;
+            }
+            &:nth-child(4n + 4) {
+                margin-right: 0% !important;
+            }
+            &:nth-child(3n + 3) {
+                margin-right: 0% !important;
+            }
+            &:nth-child(2n) {
+                margin-right: 0% !important;
+            }
+            .popularGamesItem_content {
+                .content {
+                    width: 95%;
+                    .btn {
+                        margin-top: 10px;
+                        height: 40px;
+                        span {
+                            font-size: 14px;
+                        }   
+                    }
+                }
+                .like {
+                    height: 30px;
+                    width: 30px;
+                    &:hover {
+                        background-color: $darkBlue;
+                    }
+
+                    svg {
+                        height: 25px;
+                    }
+                }
+                .star {
+                    height: 30px;
+                    svg {
+                        margin-right: 2px;
+                        height: 25px;
+                    }
+                }
+                .main {
+                    
+                    &:hover {
+                        span {
+                            color: $bgBlue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

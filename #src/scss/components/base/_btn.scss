@@ -1,0 +1,46 @@
+.btn {
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s ease-in-out;
+    padding: 15px 24px;
+    cursor: pointer;
+    span {
+        display: inline-block;
+        text-align: center;
+        min-width: 100px;
+        font-size: 16px;
+        line-height: 20px;
+        transition: .2s ease-in-out;
+        color: $mainWhite;
+        font-weight: 500;
+    }
+    &.main {
+        border: 2px solid $mainWhite;
+        &.disabled {
+            opacity: .5;
+            cursor: default;
+            &:hover {
+                background-color: transparent;
+                span {
+                    color: $mainWhite;
+                }
+            }
+        }
+        &:hover {
+            background-color: $mainWhite;
+            span {
+                color: $bgBlue;
+            }
+        }
+    }
+    &.secondary {
+        border: 2px solid $lightBlue;
+        background-color: $lightBlue;
+        &:hover {
+            border: 2px solid $darkBlue !important;
+            background-color: $darkBlue;
+        }
+    }
+}

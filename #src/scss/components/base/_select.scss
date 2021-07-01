@@ -1,0 +1,47 @@
+.select2-container--default .select2-selection--single {
+    background-color: $bgBlue;
+}
+.select2-container .select2-selection--single {
+    height: 47px !important;
+}
+.select2-selection__arrow {
+    height: 46px !important;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding: 10px 15px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: $mainWhite;
+    font-size: 18px;
+}
+.select2-container--default .select2-results__option--selected {
+    color: $mainWhite;
+    font-size: 18px;
+    background-color: $bgBlue;
+}
+.select2-results__option--selectable {
+    color: $mainWhite;
+    font-size: 18px;
+    background-color: $bgBlue;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: $lightBlue;
+    font-size: 18px;
+    color: $mainWhite;
+}
+
+.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar-track {
+    background-color:$bgBlue
+}
+.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    width: 3px;
+    background-color: rgba($lightBlue, .5);
+}
+.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar-thumb:hover{
+    background-color:$lightBlue;
+}
+.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar{
+    width: 4px;
+}
