@@ -3,11 +3,12 @@
     justify-content: space-between;
     padding-top: 2em;
     overflow-x: hidden;
-    align-items: center;
+    align-items: start;
     &__search {
-        width: 25%;
+        width: 37.5%;
         input {
             height: 47px;
+            margin-top: 0;
         }
     }
     &__providers {

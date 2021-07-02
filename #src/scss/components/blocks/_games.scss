@@ -108,6 +108,32 @@
     width: 60%;
     max-width: 360px;
     min-width: 240px;
+    margin: 0 auto;
+}
+@media (max-width: 1700px) {
+    .games {
+        .gameItem {
+            .popularGamesItem_content {
+                transform: translateY(50%);
+                transition: .2s ease-in-out;
+                .content {
+                    width: 80%;
+                    top: 10%;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    .btn {
+                        max-width: 100%;
+                        margin-top: 10px;
+                        height: 40px;
+                        span {
+                            font-size: 10px;
+                        }   
+                    }
+                }
+            }
+        }
+    }
 }
 @media (max-width: 1600px) {
     .games {
@@ -192,6 +218,40 @@
         }
     }
 }
+@media (max-width: 1500px) {
+    .games {
+        .gameItem {
+            .popularGamesItem_content {
+                .content {
+                    width: 90%;
+                    .btn {
+                        height: 40px;
+                        span {
+                            font-size: 12px;
+                        }   
+                    }
+                }
+                .like {
+                    &:hover {
+                        background-color: $darkBlue;
+                    }
+                }
+                .star {
+                    svg {
+                        margin-right: 2px;
+                    }
+                }
+                .main {
+                    &:hover {
+                        span {
+                            color: $bgBlue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media (max-width: 1280px) {
     .games {
         display: flex;
@@ -261,7 +321,7 @@
             }
             .popularGamesItem_content {
                 .content {
-                    width: 70%;
+                    width: 90%;
                     .btn {
                         height: 40px;
                         span {

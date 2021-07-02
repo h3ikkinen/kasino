@@ -1,7 +1,7 @@
 .popularGames {
     padding-top: 2em;
     .mainTitle {
-        font-size: calc(18px + 7 * ((100vw - 320px) / (1280 - 320)));
+        font-size: calc(15px + 7 * ((100vw - 320px) / (1280 - 320)));
         font-weight: 500;
         color: $mainWhite;
     }
@@ -10,6 +10,7 @@
     }
     .swiper-button-next, .swiper-button-prev {
         font-size: 12px !important;
+        color: $mainWhite !important;
         &::before {
             content: '';
             height: 25px;
@@ -19,12 +20,13 @@
             // top: 50%;
             // transform: translateY(-50%);
             border-radius: 100%;
-            background-color: $mainWhite;
+            background-color: $bgBlue !important;
         }
         &::after {
             z-index: 3;
             font-size: 30px !important;
             top: 50%;
+            color: $mainWhite !important;
         }
     }
     .swiper-button-next {
@@ -36,7 +38,6 @@
     .popularGamesItem {
         position: relative;
         overflow: hidden;
-        border-radius: 5px;
         img {
             width: 100%;
             height: auto;
@@ -129,7 +130,104 @@
         }
     }
 }
-
+@media (max-width: 1700px) {
+    .popularGames {
+        padding-top: 2em;
+        .swiper-button-next, .swiper-button-prev {
+            font-size: 12px !important;
+            &::before {
+                content: '';
+                height: 20px;
+                width: 20px;
+                padding: 10px;
+                position: absolute;
+                // top: 50%;
+                // transform: translateY(-50%);
+                border-radius: 100%;
+                background-color: $mainWhite;
+            }
+            &::after {
+                z-index: 3;
+                font-size: 30px !important;
+                top: 50%;
+            }
+        }
+        .swiper-button-next {
+            right: 15px;
+        }
+        .swiper-button-prev {
+            left: 15px;
+        }
+        .popularGamesItem {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            .popularGamesItem_content {
+                .content {
+                    width: 70%;
+                    top: 10%;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    .btn {
+                        max-width: 100%;
+                        margin-top: 10px;
+                        height: 40px;
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .like {
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+                    background-color: $lightBlue;
+                    height: 30px;
+                    width: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 100%;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $darkBlue;
+                    }
+                }
+                .star {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 10px;
+                    background-color: $lightBlue;
+                    height: 30px;
+                    padding-right: 5px;
+                    padding-left: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 32px;
+                    cursor: pointer;
+                    color: $mainWhite;
+                    svg {
+                        margin-right: 2px;
+                    }
+                    &:hover {
+                        background-color: $darkBlue;
+                    }
+                }
+                .main {
+                    background-color: $bgBlue;
+                    &:hover {
+                        background-color: $mainWhite;
+                        span {
+                            color: $bgBlue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media (max-width: 1600px) {
     .popularGames {
         padding-top: 2em;
@@ -228,7 +326,7 @@
         }
     }
 }
-@media (max-width: 1280px) {
+@media (max-width: 1440px) {
     .popularGames {
         padding-top: 2em;
         .swiper-button-next, .swiper-button-prev {
@@ -272,7 +370,105 @@
                         margin-top: 10px;
                         height: 40px;
                         span {
-                            font-size: 12px;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                .like {
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+                    background-color: $lightBlue;
+                    height: 30px;
+                    width: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 100%;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $darkBlue;
+                    }
+                }
+                .star {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 10px;
+                    background-color: $lightBlue;
+                    height: 30px;
+                    padding-right: 5px;
+                    padding-left: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 32px;
+                    cursor: pointer;
+                    color: $mainWhite;
+                    svg {
+                        margin-right: 2px;
+                    }
+                    &:hover {
+                        background-color: $darkBlue;
+                    }
+                }
+                .main {
+                    background-color: $bgBlue;
+                    &:hover {
+                        background-color: $mainWhite;
+                        span {
+                            color: $bgBlue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1280px) {
+    .popularGames {
+        padding-top: 2em;
+        .swiper-button-next, .swiper-button-prev {
+            font-size: 12px !important;
+            &::before {
+                content: '';
+                height: 20px;
+                width: 20px;
+                padding: 10px;
+                position: absolute;
+                // top: 50%;
+                // transform: translateY(-50%);
+                border-radius: 100%;
+                background-color: $mainWhite;
+            }
+            &::after {
+                z-index: 3;
+                font-size: 30px !important;
+                top: 50%;
+            }
+        }
+        .swiper-button-next {
+            right: 15px;
+        }
+        .swiper-button-prev {
+            left: 15px;
+        }
+        .popularGamesItem {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            .popularGamesItem_content {
+                .content {
+                    width: 90%;
+                    top: 10%;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    .btn {
+                        max-width: 100%;
+                        margin-top: 10px;
+                        height: 40px;
+                        span {
+                            font-size: 10px;
                         }
                     }
                 }
